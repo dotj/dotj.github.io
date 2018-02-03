@@ -1,0 +1,183 @@
+/* dotj@github */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+    color: #111;
+    text-align: center;
+    padding-top: 0%;
+    background-color: #fff;
+}
+
+p {
+    font-size: 1.0em;
+    font-weight: lighter;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+}
+
+a {
+	color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #e2bcc4;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+/* name */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    letter-spacing: 0.25em;
+    font-weight: lighter;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.0em;
+    letter-spacing: 0.25em;
+    font-weight: lighter;
+}
+
+
+::selection {
+  background: #e2bcc4; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #e2bcc4; /* Gecko Browsers */
+}
+
+/* divs */
+
+.container {
+	/* main container */
+    max-width: 960px;
+    max-height: 90%;
+    margin: auto;
+}
+
+
+/*  $(css_element1).css({ 'background': 'linear-gradient(' + topTransition + ', ' + bottomTransition + ')'});*/
+
+
+
+.js_bg1 {
+    background: #e2bcc4;
+	background: linear-gradient(to top left, #e2bcc4, #416788);
+    padding: 1px;
+}
+
+.js_bg2 {
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.primary {
+
+}
+
+.secondary {
+    text-align: left;
+}
+
+
+/*--- "media queries" -------------------------------------------------------*/
+/* adapted from Skeleton V2.0.4, 2014, Dave Gamache / www.getskeleton.com ---*/
+
+/* Larger than mobile */
+@media (min-width: 450px) {
+    .container {
+    }
+}
+
+/* Larger than avg tablet */
+@media (min-width: 720px) {
+}
+
+/*--- socicons --------------------------------------------------------------*/
+/* code generated from https://perfecticons.com/ ----------------------------
+
+@font-face {
+    font-family: 'si';
+    src: url('../socicon/socicon.eot');
+    src: url('../socicon/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../socicon/socicon.woff') format('woff'),
+         url('../socicon/socicon.ttf') format('truetype'),
+         url('../socicon/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../socicon/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow: hidden;
+    margin-top: -1em;
+	padding: 0;
+    list-style: none;
+	text-align: center;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 1.0em;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 5px;
+    color: #777777;
+}
+
+.soc li a:hover {
+    color: #fff;
+}
+
+.soc-icon-last{ margin:0 !important; }
+
+.soc-linkedin:before {
+    content:'\e049';
+}
+.soc-github:before {
+    content:'\e030';
+}
+.soc-mail:before {
+    content:'\e01f';
+}
+
+.soc-twitter:before {
+    content:'\e040';
+}*/
