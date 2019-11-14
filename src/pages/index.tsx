@@ -1,9 +1,8 @@
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Navigation from '../components/navigation'
 
 interface PostNode {
   node: {
@@ -34,13 +33,12 @@ interface IndexPageProps {
 class IndexPage extends React.Component<IndexPageProps, {}> {
   render() {
     const { data } = this.props
-    const posts = data.allMarkdownRemark.edges
 
     return (
       <Layout>
         <SEO
           title="All posts"
-          keywords={['blog', 'gatsby', 'javascript', 'react']}
+          keywords={['software developer', 'ux research', 'tech ethics', 'privacy', 'social psychology']}
         />
         <Bio/>
       </Layout>

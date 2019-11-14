@@ -1,23 +1,11 @@
 import * as React from 'react'
-
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `StaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.app/gatsby-image
- * - `StaticQuery`: https://gatsby.app/staticquery
- */
+import { Link } from 'gatsby'
 
 const Bio = () => (
   <div>
-    <p>Software developer and UX Researcher.</p>
+    <p>Hi, I'm a software developer and UX researcher focusing on tech ethics, privacy, and social psychology. Let's chat about wicked problems. 🧙🏻‍♀</p>
 
-    <p>hellojuliedo at gmail dot com</p>
-
-    <p><a href="https://linkedin.com/in/julietdo">LinkedIn</a></p>
+    <p>Contact me at <em>julietdo at uw dot edu</em>, or find me on <a href="https://linkedin.com/in/julietdo">LinkedIn</a> and <a href="https://github.com/dotj">GitHub</a>.</p>
   </div>
 )
 

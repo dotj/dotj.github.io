@@ -1,9 +1,7 @@
 import { graphql, Link } from 'gatsby'
 import * as React from 'react'
-import Image from '../components/image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Bio from '../components/bio'
 
 interface PostNode {
   node: {
@@ -38,10 +36,10 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
 
     return (
       <Layout>
-        <SEO
+        {/* <SEO
           title="All posts"
           keywords={['blog', 'gatsby', 'javascript', 'react']}
-        />
+        /> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

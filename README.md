@@ -1,6 +1,6 @@
-# blog-boilerplate
+# dotj.github.io
 
-This is a custom blog boilerplate using Gatsby and Typography.
+Personal webpage
 
 ## Usage
 

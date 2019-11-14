@@ -3,16 +3,10 @@ module.exports = {
     title: 'Julie T. Do',
     description:
       'Software Developer and UX Researcher',
-    author: '@gatsbyjs',
+    author: '@dotj',
   },
   pathPrefix: "/",
   plugins: [
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,7 +28,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 600,
+              maxWidth: 800,
             },
           },
           {

@@ -1,0 +1,62 @@
+html {
+    display: table;
+    margin: auto;
+
+    --primary-color: #B57F29;
+    --secondary-color: #333D1D;
+    --font-color: #424242;
+    --bg-color: #B57F29;
+    --heading-color: #B57F29;
+    --accent-color: #9AA58A;
+    --highlight-color: #E3E6DF;
+}
+
+html, body {
+    background: 'white';
+    height: 100%;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+body, p {
+    color: var(--font-color);
+	font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+}
+
+h1 { font-size: 1.6rem; }
+
+h2 { font-size: 1.2rem; }
+
+a {
+	color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+a:hover {
+    background: var(--highlight-color);
+}
+
+em {
+    color: var(--primary-color);
+}
+
+::selection, ::-moz-selection {
+  background: var(--accent-color);
+}
+
+div {
+    max-width: 60rem;
+}
+
+.gradient {
+	background: linear-gradient(to top left, var(--accent-color), var(--bg-color));
+}
