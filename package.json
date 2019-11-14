@@ -1,0 +1,58 @@
+{
+  "name": "dotj.github.io",
+  "description": "dotj.github.io",
+  "version": "1.0.0",
+  "author": "dotj",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "rm -rf node_modules",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dotj/blog-boilerplate"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.53",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-typescript": "^2.0.3",
+    "gatsby-plugin-typography": "^2.3.16",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-images": "^3.0.1",
+    "gatsby-remark-responsive-iframe": "^2.0.7",
+    "gatsby-source-filesystem": "^2.0.12",
+    "gatsby-transformer-remark": "^2.1.15",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "gh-pages": "^2.1.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.19",
+    "typescript": "^3.2.2",
+    "typography": "^0.16.19",
+    "typography-theme-de-young": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.15",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-helmet": "^5.0.7",
+    "prettier": "^1.15.2",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0"
+  }
+}
