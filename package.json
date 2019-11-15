@@ -7,17 +7,17 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -rf node_modules",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -b master -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://dotj.github.io/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dotj/blog-boilerplate"
+    "url": "https://github.com/dotj/"
   },
   "dependencies": {
     "gatsby": "^2.0.53",
