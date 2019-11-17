@@ -37,7 +37,7 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
     return (
       <Layout>
         {/* <SEO
-          title="All posts"
+          title="Portfolio"
           keywords={['blog', 'gatsby', 'javascript', 'react']}
         /> */}
         {posts.map(({ node }) => {

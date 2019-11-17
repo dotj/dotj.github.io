@@ -37,7 +37,7 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
     return (
       <Layout>
         <SEO
-          title="All posts"
+          title="About"
           keywords={['software developer', 'ux research', 'tech ethics', 'privacy', 'social psychology']}
         />
         <Bio/>
