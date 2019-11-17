@@ -36,10 +36,10 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
 
     return (
       <Layout>
-        {/* <SEO
-          title="Portfolio"
+        <SEO
+          title="UX Research"
           keywords={['blog', 'gatsby', 'javascript', 'react']}
-        /> */}
+        />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -49,7 +49,7 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
                   marginBottom: '0.25rem',
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

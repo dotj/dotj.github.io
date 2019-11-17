@@ -2,18 +2,19 @@ html {
     display: table;
     margin: auto;
 
-    --primary-color: #B57F29;
-    --secondary-color: #333D1D;
-    --font-color: #424242;
-    --bg-color: #B57F29;
-    --heading-color: #B57F29;
-    --accent-color: #9AA58A;
-    --highlight-color: #E3E6DF;
+    --darkgrey: #333;
+    --lightgrey: #aaa;
+
+    --goldenrod: #ECB357;
+    --palegreen: #9AA58A;
+    --darkgreen: #4B7554;
+    --lightpink: #E4CECE;
+    --dustypink: #B57979;
+
 }
 
 html, body {
-    background: 'white';
-    height: 100%;
+    background: white;
 }
 
 body {
@@ -22,41 +23,47 @@ body {
 }
 
 body, p {
-    color: var(--font-color);
+    color: var(--darkgrey);
 	font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
 
 h1, h2, h3 {
-    color: var(--heading-color);
+    color: var(--darkgreen);
+    font-weight: normal;
 }
 
-h1 { font-size: 1.6rem; }
+h1 { font-size: 1.5rem; }
 
-h2 { font-size: 1.2rem; }
+h2 { font-size: 1.3rem; }
+
+h3 { font-size: 1.1rem; }
+
+hr {
+    background: var(--goldenrod);
+    height: 1px;
+    border: none;
+}
 
 a {
-	color: var(--secondary-color);
+	color: var(--darkgrey);
     text-decoration: none;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 2px solid var(--palegreen);
 }
 
 a:hover {
-    background: var(--highlight-color);
+    color: var(--lightgrey);
+    border-bottom: 2px solid var(--goldenrod);
 }
 
 em {
-    color: var(--primary-color);
+    color: var(--darkgreen);
 }
 
 ::selection, ::-moz-selection {
-  background: var(--accent-color);
+  background: var(--goldenrod);
 }
 
 div {
     max-width: 60rem;
-}
-
-.gradient {
-	background: linear-gradient(to top left, var(--accent-color), var(--bg-color));
 }
