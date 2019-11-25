@@ -1,7 +1,8 @@
 ---
-title: Post Three
-date: "2019-10-01"
-description: Photos and stuff
+title: Pupularity
+date: "2018-03"
+tags: data mining, data analysis, sentiment analysis
+description: A data-mining and analysis project on the features and entities that drive engagement among popular dog-themed twitter accounts?”
 ---
 
 # Post Three with Heading 1

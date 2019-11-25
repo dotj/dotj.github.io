@@ -25,8 +25,8 @@ const Layout: React.SFC = ({ children }) => (
         }}
       >
         <div style={{
-          border: '1px solid var(--dustypink)',
-          boxShadow: '5px 5px var(--lightpink)',
+          border: '1px solid var(--darkgreen)',
+          boxShadow: '5px 5px var(--palegreen)',
           padding: '2rem',
           maxWidth: '50rem',
         }}>

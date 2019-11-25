@@ -3,13 +3,13 @@ html {
     margin: auto;
 
     --darkgrey: #333;
-    --lightgrey: #aaa;
+    --lightgrey: #999;
 
     --goldenrod: #ECB357;
     --palegreen: #9AA58A;
     --darkgreen: #4B7554;
-    --lightpink: #E4CECE;
-    --dustypink: #B57979;
+    /* --lightpink: #E4CECE;
+    --dustypink: #B57979; */
 
 }
 
@@ -26,6 +26,7 @@ body, p {
     color: var(--darkgrey);
 	font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    font-weight: lighter;
 }
 
 h1, h2, h3 {

@@ -1,6 +1,8 @@
 ---
-title: Post Two
-date: "2016"
+title: Racoonz
+date: "2017-12"
+tags: user research, ideation, user centered design
+description: User research and ideation for a mobile application (“Racoonz app”) that allows users to quickly and easily identify and sort waste.
 ---
 
 # Veggie ipsum
