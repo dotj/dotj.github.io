@@ -38,14 +38,15 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
     return (
       <Layout>
         <SEO
-          title="UX Research"
-          keywords={['blog', 'gatsby', 'javascript', 'react']}
+          title="Portfolio"
+          keywords={['ux research', 'portfolio', 'javascript', 'react']}
         />
+        <div><p>✨Under construction ✨</p></div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h3
+              {/* <h3
                 style={{
                   marginBottom: '0.25rem',
                 }}
@@ -55,7 +56,7 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.description }} />
+              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.description }} /> */}
             </div>
           )
         })}

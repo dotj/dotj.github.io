@@ -3,6 +3,7 @@ title: Washington State Art Archive
 date: "2018-03"
 tags: quantitative, qualitative, usability study
 description: A usability study for the Washington State Art Archive's Art Portal
+featuredImage: './bench-accounting-unsplash.jpg'
 ---
 
 # Lorem ipsum dolor sit amet

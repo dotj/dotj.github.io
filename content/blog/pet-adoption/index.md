@@ -3,6 +3,7 @@ title: Pet Adoption
 date: "2019-03"
 tags: qualitative, field study, participatory
 description: A qualitative study on pet adoption.
+featuredImage: './bench-accounting-unsplash.jpg'
 ---
 
 # Lorem ipsum dolor sit amet

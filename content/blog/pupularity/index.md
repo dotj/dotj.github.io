@@ -3,6 +3,7 @@ title: Pupularity
 date: "2018-03"
 tags: data mining, data analysis, sentiment analysis
 description: A data-mining and analysis project on the features and entities that drive engagement among popular dog-themed twitter accounts?”
+featuredImage: './bench-accounting-unsplash.jpg'
 ---
 
 # Post Three with Heading 1
