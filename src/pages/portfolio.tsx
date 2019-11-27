@@ -9,6 +9,7 @@ interface PostNode {
     frontmatter: {
       date: string
       title: string
+      description: string
     }
     fields: {
       slug: string
@@ -36,25 +37,26 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
 
     return (
       <Layout>
-        {/* <SEO
+        <SEO
           title="Portfolio"
-          keywords={['blog', 'gatsby', 'javascript', 'react']}
-        /> */}
+          keywords={['ux research', 'portfolio', 'javascript', 'react']}
+        />
+        <div><p>✨Under construction ✨</p></div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h3
+              {/* <h3
                 style={{
                   marginBottom: '0.25rem',
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.description }} /> */}
             </div>
           )
         })}
@@ -80,8 +82,9 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMMM YYYY")
             title
+            description
           }
         }
       }

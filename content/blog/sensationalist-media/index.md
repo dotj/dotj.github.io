@@ -1,7 +1,9 @@
 ---
-title: Post One
-date: "2015-05-28"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+title: Sensationalist Media
+date: "2017-12"
+tags: quantitative, experimental study, statistical analysis
+description: An experimental study on sensationalist media and reading comprehension.
+featuredImage: './bench-accounting-unsplash.jpg'
 ---
 
 # Lorem ipsum dolor sit amet
