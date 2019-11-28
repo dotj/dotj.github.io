@@ -1,8 +1,8 @@
 import { graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import * as React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Img from 'gatsby-image'
 
 interface PostNode {
   node: {
@@ -15,6 +15,7 @@ interface PostNode {
         absolutePath: string
         childImageSharp: {
           fluid: any
+          fixed: any
         }
       }
     }
@@ -48,24 +49,19 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
           title="Portfolio"
           keywords={['ux research', 'portfolio', 'javascript', 'react']}
         />
-        {/* <div><p>✨Under construction ✨</p></div> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: '0.25rem',
-                }}
-              >
-                <Link to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.description }} />
-              <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid}></Img>
-            </div>
+            <Link to={node.fields.slug}>
+              <div key={node.fields.slug} style={{
+                marginTop: '1rem'
+              }}>
+                <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid}></Img>
+                {title}, {node.frontmatter.date}
+                <br/>
+                <small>{node.frontmatter.description}</small>
+              </div>
+            </Link>
           )
         })}
       </Layout>
@@ -94,10 +90,9 @@ export const pageQuery = graphql`
             title
             description
             featuredImage {
-              absolutePath
               childImageSharp {
-                fluid(maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
+                fluid(cropFocus: CENTER, maxWidth: 600) {
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }

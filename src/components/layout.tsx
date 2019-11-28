@@ -1,9 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby'
 import * as React from 'react'
-import Header from './header'
 import Navigation from './navigation'
-
-const styles = require('../styles/global.css')
 
 const Layout: React.SFC = ({ children }) => (
   <StaticQuery
@@ -27,12 +24,9 @@ const Layout: React.SFC = ({ children }) => (
         <div style={{
           border: '1px solid var(--darkgreen)',
           boxShadow: '5px 5px var(--palegreen)',
-          padding: '2rem',
-          maxWidth: '50rem',
+          padding: '2rem'
         }}>
-          {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
           <Navigation />
-          {/* <hr/> */}
           {children}
         </div>
       </div>

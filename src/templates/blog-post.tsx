@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby'
 import * as React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Img from 'gatsby-image'
 
 interface BlogPostTemplateProps {
   data: {
@@ -17,6 +18,12 @@ interface BlogPostTemplateProps {
       frontmatter: {
         title: string
         date: string
+        description: string
+        featuredImage: {
+          childImageSharp: {
+            fluid: any
+          }
+        }
       }
     }
   }
@@ -34,20 +41,17 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            display: 'block',
-            marginBottom: '1rem',
-            marginTop: '-rem',
-          }}
-        >
-          {post.frontmatter.date}
+        <header style={{ marginBottom: '1rem' }}>
+          {post.frontmatter.title}
+        </header>
+        <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid}/>
+        <p style={{ textAlign: 'center' }}>
+          <em>{post.frontmatter.description} {post.frontmatter.date}</em>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
-            marginBottom: '14px',
+            marginBottom: '1rem',
           }}
         />
         <ul
@@ -95,7 +99,15 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM YYYY")
+        description
+        featuredImage {
+          childImageSharp {
+            fluid(cropFocus: CENTER, maxWidth: 600) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     }
   }

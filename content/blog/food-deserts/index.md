@@ -3,7 +3,7 @@ title: Food Deserts
 date: "2018-06"
 tags: information visualization, data analysis 
 description: An information visualization project exploring food deserts in the United States.
-featuredImage: './placeholder1200x800.png'
+featuredImage: './dave-herring-unsplash.jpg'
 ---
 
 # Lorem ipsum dolor sit amet
