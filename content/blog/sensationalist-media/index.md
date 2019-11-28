@@ -3,7 +3,7 @@ title: Sensationalist Media
 date: "2017-12"
 tags: quantitative, experimental study, statistical analysis
 description: An experimental study on sensationalist media and reading comprehension.
-featuredImage: './bench-accounting-unsplash.jpg'
+featuredImage: './placeholder1200x800.png'
 ---
 
 # Lorem ipsum dolor sit amet

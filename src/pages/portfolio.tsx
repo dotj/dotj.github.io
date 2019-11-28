@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby'
 import * as React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Img from 'gatsby-image'
 
 interface PostNode {
   node: {
@@ -10,6 +11,12 @@ interface PostNode {
       date: string
       title: string
       description: string
+      featuredImage: {
+        absolutePath: string
+        childImageSharp: {
+          fluid: any
+        }
+      }
     }
     fields: {
       slug: string
@@ -41,12 +48,12 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
           title="Portfolio"
           keywords={['ux research', 'portfolio', 'javascript', 'react']}
         />
-        <div><p>✨Under construction ✨</p></div>
+        {/* <div><p>✨Under construction ✨</p></div> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              {/* <h3
+              <h3
                 style={{
                   marginBottom: '0.25rem',
                 }}
@@ -56,7 +63,8 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.description }} /> */}
+              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.description }} />
+              <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid}></Img>
             </div>
           )
         })}
@@ -85,6 +93,14 @@ export const pageQuery = graphql`
             date(formatString: "MMMM YYYY")
             title
             description
+            featuredImage {
+              absolutePath
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
