@@ -58,7 +58,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: 'julietdo.info',
+        short_name: 'julietdo',
         start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#9AA58A',
+        display: 'minimal-ui',
         icon: 'src/images/favicon.png', // https://logohub.io/
       },
     },
