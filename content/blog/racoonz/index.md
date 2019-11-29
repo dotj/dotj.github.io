@@ -1,13 +1,17 @@
 ---
 title: Racoonz
+icon: ♻️
 date: "2017-12"
-tags: user research, ideation, user centered design
-description: User research and ideation for a mobile application (“Racoonz app”) that allows users to quickly and easily identify and sort waste.
-featuredImage: './bench-accounting-unsplash.jpg'
+featuredImage: './racoonz.png'
+tags:
+    - user research
+    - ideation
+    - user centered design
+description:
+    "Racoonz" is a design ideation project inspired by our frustations with learning proper waste-sorting techniques in Seattle.
 ---
 
-# Veggie ipsum
 
-Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+# Documentation
 
-Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+- [Racoonz - Design Specification](https://www.dropbox.com/s/6fbq6wstqogi2kj/Racoonz%20-%20Design%20Specification.pdf?dl=0)

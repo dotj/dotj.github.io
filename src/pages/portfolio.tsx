@@ -10,6 +10,7 @@ interface PostNode {
       date: string
       title: string
       description: string
+      icon: string
     }
     fields: {
       slug: string
@@ -38,26 +39,36 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
     return (
       <Layout>
         <SEO
-          title="Portfolio"
+          title="UX Research Portfolio"
           keywords={['ux research', 'portfolio', 'javascript', 'react']}
         />
-        <div><p>✨Under construction ✨</p></div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              {/* <h3
-                style={{
-                  marginBottom: '0.25rem',
-                }}
-              >
-                <Link to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.description }} /> */}
-            </div>
+            <Link to={node.fields.slug} key={node.fields.slug} style={{
+              marginTop: '1rem',
+              marginBottom: '1rem',
+              display: 'grid',
+              gridTemplateColumns: '3rem auto',
+              gridGap: '0.5rem',
+              padding: '0.2rem 0.1rem',
+              border: 'none',
+              color: 'var(--darkgrey)'
+            }}>
+              <div style={{
+                textAlign: 'center',
+                fontSize: '2rem'
+              }}>
+                {node.frontmatter.icon}
+              </div>
+              <div>
+                <strong>{title}</strong>
+                <br/>
+                <em>{node.frontmatter.date}</em>
+                <br/>
+                {node.frontmatter.description}
+              </div>
+            </Link>
           )
         })}
       </Layout>
@@ -85,6 +96,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM YYYY")
             title
             description
+            icon
           }
         }
       }

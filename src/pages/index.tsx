@@ -1,4 +1,3 @@
-import { graphql } from 'gatsby'
 import * as React from 'react'
 import Bio from '../components/bio'
 import Layout from '../components/layout'

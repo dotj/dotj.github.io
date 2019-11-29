@@ -5,12 +5,11 @@ html {
     --darkgrey: #333;
     --lightgrey: #999;
 
+    --palegold: #FFF5DD;
     --goldenrod: #ECB357;
+    --lightgreen: #E3E6DF;
     --palegreen: #9AA58A;
     --darkgreen: #4B7554;
-    /* --lightpink: #E4CECE;
-    --dustypink: #B57979; */
-
 }
 
 html, body {
@@ -29,16 +28,21 @@ body, p {
     font-weight: lighter;
 }
 
+header {
+    color: var(--darkgrey);
+    font-size: 1.8rem;
+}
+
 h1, h2, h3 {
     color: var(--darkgreen);
     font-weight: normal;
 }
 
-h1 { font-size: 1.5rem; }
+h1 { font-size: 1.6rem; }
 
-h2 { font-size: 1.3rem; }
+h2 { font-size: 1.4rem; }
 
-h3 { font-size: 1.1rem; }
+h3 { font-size: 1.2rem; }
 
 hr {
     background: var(--goldenrod);
@@ -53,18 +57,43 @@ a {
 }
 
 a:hover {
-    color: var(--lightgrey);
+    background: var(--palegold);
     border-bottom: 2px solid var(--goldenrod);
 }
 
-em {
+em, strong {
     color: var(--darkgreen);
 }
 
+strong {
+    font-weight: normal;
+}
+
+mark {
+    background: var(--palegold);
+}
+
+ul, ol {
+    color: var(--darkgreen);
+}
+
+blockquote {
+    background: var(--lightgreen);
+    display: block;
+    padding: 0.1rem 1rem;
+}
+
+code {
+    background: var(--lightgreen);
+    display: block;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
 ::selection, ::-moz-selection {
-  background: var(--goldenrod);
+    background: var(--goldenrod);
 }
 
 div {
-    max-width: 40rem;
+    max-width: 50rem;
 }

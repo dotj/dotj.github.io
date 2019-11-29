@@ -1,11 +1,16 @@
 ---
-title: Pet Adoption
+title: Pet Adoption in Seattle
+icon: 🐱
 date: "2019-03"
-tags: qualitative, field study, participatory
-description: A qualitative study on pet adoption.
-featuredImage: './bench-accounting-unsplash.jpg'
+featuredImage: './jordan-the-cat.jpg'
+tags:
+    - qualitative
+    - field study
+    - participatory
+description:
+    Using user interviews and in-person observations with a phenomelogical lens, we conducted a qualitative research project to explore the experience of pet adoption in Seattle.
 ---
 
-# Lorem ipsum dolor sit amet
+# Documentation
 
-Consectetur adipiscing elit. Donec ultricies velit et consectetur placerat. In et nulla non sem elementum tincidunt. Donec rhoncus, dui tincidunt accumsan mollis, augue urna fringilla justo, eu hendrerit quam elit id ante. Aenean dignissim elementum tellus, quis laoreet ex porttitor a. Curabitur faucibus ornare fermentum. Nullam consequat nisi augue, non convallis mauris finibus at. Nulla eu massa ac libero blandit fermentum. Integer rutrum, velit ut vulputate vestibulum, ex tellus molestie ex, sed pretium eros nulla at augue. Fusce sagittis libero a justo feugiat aliquet. Vivamus rutrum sit amet diam non vulputate. Curabitur luctus eu ligula in volutpat. Aliquam a urna nec velit eleifend hendrerit. In ut fringilla ipsum. Nunc porta, diam a faucibus finibus, nisi purus mollis elit, non rhoncus mi elit eu nulla. Donec nec mauris quis ligula venenatis ultricies.
+- [Pet Adoption - Research Paper](https://www.dropbox.com/s/q3caket2wmmfzqw/Pet%20Adoption%20-%20Research%20Paper.pdf?dl=0)

@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby'
 import * as React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Img from 'gatsby-image'
 
 interface BlogPostTemplateProps {
   data: {
@@ -17,6 +18,13 @@ interface BlogPostTemplateProps {
       frontmatter: {
         title: string
         date: string
+        description: string
+        icon: string
+        featuredImage: {
+          childImageSharp: {
+            fluid: any
+          }
+        }
       }
     }
   }
@@ -34,20 +42,24 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            display: 'block',
-            marginBottom: '1rem',
-            marginTop: '-rem',
-          }}
-        >
-          {post.frontmatter.date}
+        <header style={{ marginTop: '1rem', marginBottom: '1rem', textAlign: 'center' }}>
+          {post.frontmatter.title}
+          <br/>
+          {post.frontmatter.icon}
+        </header>
+        <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid}/>
+        <p style={{
+          textAlign: 'left',
+          border: '1px solid var(--goldenrod)',
+          boxShadow: '5px 5px var(--palegold)',
+          padding: '1rem'
+        }}>
+          {post.frontmatter.description} <em>{post.frontmatter.date}</em>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
-            marginBottom: '14px',
+            marginBottom: '1rem',
           }}
         />
         <ul
@@ -62,14 +74,14 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                ← Previous
               </Link>
             )}
           </li>
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                Next →
               </Link>
             )}
           </li>
@@ -95,7 +107,16 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM YYYY")
+        description
+        icon
+        featuredImage {
+          childImageSharp {
+            fluid(cropFocus: CENTER, maxWidth: 600) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     }
   }
