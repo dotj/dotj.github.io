@@ -54,7 +54,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           boxShadow: '5px 5px var(--palegold)',
           padding: '1rem'
         }}>
-          {post.frontmatter.description} {post.frontmatter.date}
+          {post.frontmatter.description} <em>{post.frontmatter.date}</em>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr

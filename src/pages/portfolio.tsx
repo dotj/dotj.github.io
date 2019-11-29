@@ -11,7 +11,6 @@ interface PostNode {
       title: string
       description: string
       icon: string
-      tags: string
     }
     fields: {
       slug: string
@@ -65,7 +64,7 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
               <div>
                 <strong>{title}</strong>
                 <br/>
-                <em>{node.frontmatter.date} - <em>{node.frontmatter.tags}</em></em>
+                <em>{node.frontmatter.date}</em>
                 <br/>
                 {node.frontmatter.description}
               </div>
@@ -98,7 +97,6 @@ export const pageQuery = graphql`
             title
             description
             icon
-            tags
           }
         }
       }

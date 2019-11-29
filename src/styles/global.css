@@ -73,6 +73,10 @@ mark {
     background: var(--palegold);
 }
 
+ul, ol {
+    color: var(--darkgreen);
+}
+
 blockquote {
     background: var(--lightgreen);
     display: block;
