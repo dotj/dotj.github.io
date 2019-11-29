@@ -3,12 +3,8 @@ title: Racoonz
 icon: ♻️
 date: "2017-12"
 featuredImage: './racoonz.png'
-tags:
-    - user research
-    - ideation
-    - user centered design
-description:
-    "Racoonz" is a design ideation project inspired by our frustations with learning proper waste-sorting techniques in Seattle.
+tags: user research, ideation, user centered design
+description: Racoonz is a design ideation project inspired by our frustations with learning proper waste-sorting techniques in Seattle.
 ---
 
 

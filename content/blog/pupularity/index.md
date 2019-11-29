@@ -3,12 +3,8 @@ title: Twitter Pupularity
 icon: 🐶
 date: "2018-03"
 featuredImage: './brant.png'
-tags:
-    - data mining
-    - data analysis
-    - sentiment analysis
-description:
-    For a data-mining project, we collected and conducted a sentiment analysis to study the resonant features of viral tweets from dog-themed twitter accounts.
+tags: data mining, data analysis, sentiment analysis
+description: For a data-mining project, we collected and conducted a sentiment analysis to study the resonant features of viral tweets from dog-themed twitter accounts.
 ---
 
 

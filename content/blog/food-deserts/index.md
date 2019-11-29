@@ -3,11 +3,8 @@ title: Visualizing Food Deserts
 icon: 🌵
 date: "2018-06"
 featuredImage: './screencap.png'
-tags:
-    - information visualization
-    - data analysis
-description:
-    This interactive data visualization, built in Tableau, explores and contextualizes "food deserts" in the United States.
+tags: information visualization, data analysis
+description: This interactive data visualization, built in Tableau, explores and contextualizes food deserts in the United States.
 ---
 
 

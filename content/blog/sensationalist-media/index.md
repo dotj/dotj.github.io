@@ -3,12 +3,8 @@ title: Sensationalist Imagery
 icon: 🔥
 date: "2017-12"
 featuredImage: './thisisfine-cropped.png'
-tags:
-    - quantitative
-    - experimental study
-    - statistical analysis
-description:
-    We conducted an experimental study to analyze the effects of sensationalist imagery on readers' perception of events in the media.
+tags: quantitative, experimental study, statistical analysis
+description: We conducted an experimental study to analyze the effects of sensationalist imagery on readers' perception of events in the media.
 ---
 
 # Documentation
