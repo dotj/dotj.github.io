@@ -1,9 +1,10 @@
 ---
 title: Sensationalist Media
+icon: 🔥
 date: "2017-12"
 tags: quantitative, experimental study, statistical analysis
-description: An experimental study on sensationalist media and reading comprehension.
-featuredImage: './placeholder1200x800.png'
+description: An experimental study on sensationalist media and reading comprehension. Consectetur adipiscing elit. Donec ultricies velit et consectetur placerat. In et nulla non sem elementum tincidunt. Donec rhoncus, dui tincidunt accumsan mollis, augue urna fringilla justo, eu hendrerit quam elit id ante. 
+featuredImage: './thisisfine-cropped.png'
 ---
 
 # Lorem ipsum dolor sit amet

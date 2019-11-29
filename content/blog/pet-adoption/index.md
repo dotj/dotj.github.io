@@ -1,9 +1,10 @@
 ---
-title: Pet Adoption
+title: Pet Adoption in Seattle
+icon: 🐱
 date: "2019-03"
 tags: qualitative, field study, participatory
-description: A qualitative study on pet adoption.
-featuredImage: './placeholder1200x800.png'
+featuredImage: './jordan-the-cat.jpg'
+description: A qualitative study on pet adoption. Consectetur adipiscing elit. Donec ultricies velit et consectetur placerat. In et nulla non sem elementum tincidunt. Donec rhoncus, dui tincidunt accumsan mollis, augue urna fringilla justo, eu hendrerit quam elit id ante. 
 ---
 
 # Lorem ipsum dolor sit amet

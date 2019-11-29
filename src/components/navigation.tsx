@@ -29,11 +29,11 @@ const Navigation = () => (
       activeStyle={active}
       partiallyActive={true}
     >
-      Portfolio
+      UX Research
     </Link>
     {/* &nbsp;•&nbsp;
     <Link
-      to='/portfolio'
+      to='/projects'
       style={{ border: 'none' }}
       activeStyle={active}
       partiallyActive={true}

@@ -1,9 +1,10 @@
 ---
-title: Pupularity
+title: Twitter Pupularity
+icon: 🐶
 date: "2018-03"
 tags: data mining, data analysis, sentiment analysis
-description: A data-mining and analysis project on the features and entities that drive engagement among popular dog-themed twitter accounts?”
-featuredImage: './bench-accounting-unsplash.jpg'
+description: A data-mining and analysis project on the features and entities that drive engagement among popular dog-themed twitter accounts?” Consectetur adipiscing elit. Donec ultricies velit et consectetur placerat. In et nulla non sem elementum tincidunt. Donec rhoncus, dui tincidunt accumsan mollis, augue urna fringilla justo, eu hendrerit quam elit id ante. 
+featuredImage: './brant.png'
 ---
 
 # Post Three with Heading 1

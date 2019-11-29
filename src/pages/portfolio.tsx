@@ -1,5 +1,4 @@
 import { graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
 import * as React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -11,13 +10,8 @@ interface PostNode {
       date: string
       title: string
       description: string
-      featuredImage: {
-        absolutePath: string
-        childImageSharp: {
-          fluid: any
-          fixed: any
-        }
-      }
+      icon: string
+      tags: string
     }
     fields: {
       slug: string
@@ -46,20 +40,34 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
     return (
       <Layout>
         <SEO
-          title="Portfolio"
+          title="UX Research Portfolio"
           keywords={['ux research', 'portfolio', 'javascript', 'react']}
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <Link to={node.fields.slug}>
-              <div key={node.fields.slug} style={{
-                marginTop: '1rem'
+            <Link to={node.fields.slug} key={node.fields.slug} style={{
+              marginTop: '1rem',
+              marginBottom: '1rem',
+              display: 'grid',
+              gridTemplateColumns: '3rem auto',
+              gridGap: '0.5rem',
+              padding: '0.2rem 0.1rem',
+              border: 'none',
+              color: 'var(--darkgrey)'
+            }}>
+              <div style={{
+                textAlign: 'center',
+                fontSize: '2rem'
               }}>
-                <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid}></Img>
-                {title}, {node.frontmatter.date}
+                {node.frontmatter.icon}
+              </div>
+              <div>
+                <strong>{title}</strong>
                 <br/>
-                <small>{node.frontmatter.description}</small>
+                <em>{node.frontmatter.date} - <em>{node.frontmatter.tags}</em></em>
+                <br/>
+                {node.frontmatter.description}
               </div>
             </Link>
           )
@@ -89,13 +97,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM YYYY")
             title
             description
-            featuredImage {
-              childImageSharp {
-                fluid(cropFocus: CENTER, maxWidth: 600) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
+            icon
+            tags
           }
         }
       }

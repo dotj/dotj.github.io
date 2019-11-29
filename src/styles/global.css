@@ -5,12 +5,11 @@ html {
     --darkgrey: #333;
     --lightgrey: #999;
 
+    --palegold: #FFF5DD;
     --goldenrod: #ECB357;
+    --lightgreen: #E3E6DF;
     --palegreen: #9AA58A;
     --darkgreen: #4B7554;
-    /* --lightpink: #E4CECE;
-    --dustypink: #B57979; */
-
 }
 
 html, body {
@@ -58,16 +57,37 @@ a {
 }
 
 a:hover {
-    color: var(--lightgrey);
+    background: var(--palegold);
     border-bottom: 2px solid var(--goldenrod);
 }
 
-em {
+em, strong {
     color: var(--darkgreen);
 }
 
+strong {
+    font-weight: normal;
+}
+
+mark {
+    background: var(--palegold);
+}
+
+blockquote {
+    background: var(--lightgreen);
+    display: block;
+    padding: 0.1rem 1rem;
+}
+
+code {
+    background: var(--lightgreen);
+    display: block;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
 ::selection, ::-moz-selection {
-  background: var(--goldenrod);
+    background: var(--goldenrod);
 }
 
 div {

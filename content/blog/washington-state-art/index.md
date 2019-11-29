@@ -1,9 +1,10 @@
 ---
-title: Washington State Art Archive
+title: Washington State Art Archive's Art Portal
+icon: 🎨
 date: "2018-03"
 tags: quantitative, qualitative, usability study
-description: A usability study for the Washington State Art Archive's Art Portal
-featuredImage: './placeholder1200x800.png'
+description: A usability study for the Washington State Art Archive's Art Portal. Consectetur adipiscing elit. Donec ultricies velit et consectetur placerat. In et nulla non sem elementum tincidunt. Donec rhoncus, dui tincidunt accumsan mollis, augue urna fringilla justo, eu hendrerit quam elit id ante. 
+featuredImage: './arts-wa-logo.png'
 ---
 
 # Lorem ipsum dolor sit amet

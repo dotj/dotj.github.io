@@ -1,9 +1,10 @@
 ---
-title: Food Deserts
+title: Visualizing Food Deserts
+icon: 🌵
 date: "2018-06"
 tags: information visualization, data analysis 
-description: An information visualization project exploring food deserts in the United States.
-featuredImage: './dave-herring-unsplash.jpg'
+description: An information visualization project exploring food deserts in the United States. Consectetur adipiscing elit. Donec ultricies velit et consectetur placerat. In et nulla non sem elementum tincidunt. Donec rhoncus, dui tincidunt accumsan mollis, augue urna fringilla justo, eu hendrerit quam elit id ante. 
+featuredImage: './screencap.png'
 ---
 
 # Lorem ipsum dolor sit amet

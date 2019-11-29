@@ -19,6 +19,7 @@ interface BlogPostTemplateProps {
         title: string
         date: string
         description: string
+        icon: string
         featuredImage: {
           childImageSharp: {
             fluid: any
@@ -41,12 +42,19 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <header style={{ marginBottom: '1rem' }}>
+        <header style={{ marginTop: '1rem', marginBottom: '1rem', textAlign: 'center' }}>
           {post.frontmatter.title}
+          <br/>
+          {post.frontmatter.icon}
         </header>
         <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid}/>
-        <p style={{ textAlign: 'center' }}>
-          <em>{post.frontmatter.description} {post.frontmatter.date}</em>
+        <p style={{
+          textAlign: 'left',
+          border: '1px solid var(--goldenrod)',
+          boxShadow: '5px 5px var(--palegold)',
+          padding: '1rem'
+        }}>
+          {post.frontmatter.description} {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -66,14 +74,14 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                ← Previous
               </Link>
             )}
           </li>
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                Next →
               </Link>
             )}
           </li>
@@ -101,6 +109,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM YYYY")
         description
+        icon
         featuredImage {
           childImageSharp {
             fluid(cropFocus: CENTER, maxWidth: 600) {
