@@ -62,8 +62,7 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
                 {node.frontmatter.icon}
               </div>
               <div>
-                <strong>{title}</strong>
-                <br/>
+                <h1 style={{ fontSize: '1rem', lineHeight: '1.4rem', margin: '0rem' }}>{title}</h1>
                 <em>{node.frontmatter.date}</em>
                 <br/>
                 {node.frontmatter.description}

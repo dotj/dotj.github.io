@@ -59,33 +59,13 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
-            marginBottom: '1rem',
+            marginTop: '2rem',
+            marginBottom: '2rem',
           }}
         />
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← Previous
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                Next →
-              </Link>
-            )}
-          </li>
-        </ul>
+        <Link to="/portfolio" rel="prev">
+          ← Back to Portfolio
+        </Link>
       </Layout>
     )
   }
