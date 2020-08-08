@@ -26,7 +26,7 @@ const Layout: React.SFC = ({ children }) => (
           boxShadow: '5px 5px var(--lightgreen)',
           padding: '2rem'
         }}>
-          <Navigation />
+          {/* <Navigation /> */}
           {children}
         </div>
       </div>
