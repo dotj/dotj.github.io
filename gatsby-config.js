@@ -8,6 +8,18 @@ module.exports = {
   pathPrefix: "/",
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Lato\:300,300i,400,400i`,
+          `Inconsolata\:200,300,400`,
+          `Fira Sans\:300,300i,400,400i`,
+          `Fira Code\:300,400`
+        ],
+        display: "swap"
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -62,9 +74,9 @@ module.exports = {
         short_name: 'julietdo',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#9AA58A',
+        theme_color: '#00000',
         display: 'minimal-ui',
-        icon: 'src/images/favicon.png', // https://logohub.io/
+        icon: 'src/images/moon.png',
       },
     },
     'gatsby-plugin-offline',

@@ -1,0 +1,11 @@
+.layout-outer {
+  padding: 3rem;
+}
+
+.layout {
+  max-width: 30rem;
+  padding: 2rem;
+  border: 1px solid darkslategray;
+  box-shadow: 7px 7px slategray;
+  background-color: snow;
+}

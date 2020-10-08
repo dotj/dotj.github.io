@@ -22,5 +22,3 @@ When ready to deploy, generate the static files and push the the gh-pages branch
 ```sh
 npm run deploy
 ```
-
-NOTE: This deploys to the `deploy` branch. Development should occur on the `\dev` branch.

@@ -1,99 +1,57 @@
+/* Global styles */
+
 html {
     display: table;
     margin: auto;
-
-    --darkgrey: #333;
-    --lightgrey: #999;
-
-    --palegold: #FFF5DD;
-    --goldenrod: #ECB357;
-    --lightgreen: #E3E6DF;
-    --palegreen: #9AA58A;
-    --darkgreen: #4B7554;
 }
 
 html, body {
-    background: white;
-}
-
-body {
+    background: whitesmoke;
     display: table-cell;
     vertical-align: middle;
 }
 
 body, p {
-    color: var(--darkgrey);
-	font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    color: slategray;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    line-height: 1.2rem;
+}
+
+h1 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: slategray;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
     font-weight: lighter;
 }
-
-header {
-    color: var(--darkgrey);
-    font-size: 1.8rem;
-}
-
-h1, h2, h3 {
-    color: var(--darkgreen);
-    font-weight: normal;
-}
-
-h1 { font-size: 1.6rem; }
+/* 
+h1 { font-size: 1.8rem; }
 
 h2 { font-size: 1.4rem; }
 
-h3 { font-size: 1.2rem; }
+h3 { font-size: 1.2rem; } */
 
-hr {
-    background: var(--goldenrod);
-    height: 1px;
-    border: none;
-}
-
-a {
-	color: var(--darkgrey);
-    text-decoration: none;
-    border-bottom: 2px solid var(--palegreen);
-}
-
-a:hover {
-    background: var(--palegold);
-    border-bottom: 2px solid var(--goldenrod);
-}
 
 em, strong {
-    color: var(--darkgreen);
-}
-
-strong {
     font-weight: normal;
 }
 
 mark {
-    background: var(--palegold);
-}
-
-ul, ol {
-    color: var(--darkgreen);
-}
-
-blockquote {
-    background: var(--lightgreen);
-    display: block;
-    padding: 0.1rem 1rem;
-}
-
-code {
-    background: var(--lightgreen);
-    display: block;
-    padding: 1rem;
-    font-size: 0.9rem;
+    font-style: italic;
+    background: powderblue;
 }
 
 ::selection, ::-moz-selection {
-    background: var(--goldenrod);
+    background: powderblue;
 }
 
-div {
-    max-width: 30rem;
+/* Class styles */
+
+.post-blurb {
+    text-align: left;
+    background: var(--main-bg);
+    box-shadow: 5px 5px var(--accent1);
+    padding: 1rem;
 }
