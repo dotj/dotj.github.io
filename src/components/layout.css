@@ -5,7 +5,7 @@
 .layout {
   max-width: 30rem;
   padding: 2rem;
-  border: 1px solid darkslategray;
-  box-shadow: 7px 7px slategray;
+  box-shadow: 7px 7px lightgray;
   background-color: snow;
+  border: 1px solid darkslategray;
 }

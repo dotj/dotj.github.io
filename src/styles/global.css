@@ -1,18 +1,18 @@
 /* Global styles */
 
-html {
-    display: table;
-    margin: auto;
-}
-
 html, body {
-    background: whitesmoke;
     display: table-cell;
     vertical-align: middle;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: snow;
 }
 
 body, p {
-    color: slategray;
+    color: darkslategray;
 	font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
     font-weight: lighter;
@@ -22,17 +22,9 @@ body, p {
 h1 {
     font-size: 1.4rem;
     line-height: 1.6rem;
-    color: slategray;
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
     font-weight: lighter;
 }
-/* 
-h1 { font-size: 1.8rem; }
-
-h2 { font-size: 1.4rem; }
-
-h3 { font-size: 1.2rem; } */
-
 
 em, strong {
     font-weight: normal;
@@ -40,18 +32,9 @@ em, strong {
 
 mark {
     font-style: italic;
-    background: powderblue;
+    background: paleturquoise;
 }
 
 ::selection, ::-moz-selection {
-    background: powderblue;
-}
-
-/* Class styles */
-
-.post-blurb {
-    text-align: left;
-    background: var(--main-bg);
-    box-shadow: 5px 5px var(--accent1);
-    padding: 1rem;
+    background: paleturquoise;
 }
