@@ -1,11 +1,13 @@
 .layout-outer {
-  padding: 3rem;
+  /* Full screen */
+  width: 100vw;
+  height: 75vh;
+  padding-top: 25vh;
+  align-content: center;
 }
 
 .layout {
-  max-width: 30rem;
+  /* Content */
+  max-width: 32rem;
   padding: 2rem;
-  box-shadow: 7px 7px lightgray;
-  background-color: snow;
-  border: 1px solid darkslategray;
 }

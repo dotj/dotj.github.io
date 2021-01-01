@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Julie T. Do',
-    description:
-      'Software Developer and UX Researcher',
+    description: 'Homepage of Julie T. Do',
     author: '@dotj',
   },
   pathPrefix: "/",
@@ -14,7 +13,8 @@ module.exports = {
           `Lato\:300,300i,400,400i`,
           `Inconsolata\:200,300,400`,
           `Fira Sans\:300,300i,400,400i`,
-          `Fira Code\:300,400`
+          `Fira Code\:300,400`,
+          `Open Sans\:300,300i,400,400i`
         ],
         display: "swap"
       }
@@ -71,10 +71,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'julietdo.info',
-        short_name: 'julietdo',
+        short_name: 'julietdo.info',
         start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#00000',
+        background_color: '#6E76B3',
+        theme_color: '#9EB6C6',
         display: 'minimal-ui',
         icon: 'src/images/moon.png',
       },

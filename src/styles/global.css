@@ -8,33 +8,31 @@ html, body {
 
 body {
     margin: 0;
-    background: snow;
+    background: linear-gradient(#6E76B3, #9EB6C6);
 }
 
 body, p {
-    color: darkslategray;
-	font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    color: snow;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 1.2rem;
     font-weight: lighter;
-    line-height: 1.2rem;
+    line-height: 1.6rem;
 }
 
 h1 {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
     font-weight: lighter;
 }
 
-em, strong {
+em {
     font-weight: normal;
-}
-
-mark {
-    font-style: italic;
-    background: paleturquoise;
+    background: rgba(79, 84, 124, 0.40);
 }
 
 ::selection, ::-moz-selection {
-    background: paleturquoise;
+    background: rgba(79, 84, 124, 0.80);
 }

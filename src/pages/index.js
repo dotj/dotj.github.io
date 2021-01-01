@@ -1,6 +1,5 @@
 import { graphql } from "gatsby"
 import React from "react"
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -11,7 +10,11 @@ const IndexPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
-      <Bio />
+      <div>
+        <h1>Julie T. Do</h1>
+        <p>Technologist, she/her, Pacific Time Zone</p>
+        <p>Email me at <em>hellojuliedo at gmail dot com</em></p>
+      </div>
     </Layout>
   )
 }
