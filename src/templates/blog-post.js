@@ -1,17 +1,15 @@
 import { graphql, Link } from "gatsby"
-import Img from 'gatsby-image'
 import * as React from "react"
-import Layout from "../components/layout"
+import Project from "../components/project"
 import SEO from "../components/seo"
 
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Project location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -25,41 +23,19 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
           </p>
         </header>
-        <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid}/>
-        <p class="post-blurb">
-          {post.frontmatter.description} <em>{post.frontmatter.date}</em>
+        {/* <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid}/> */}
+        <p>
+          {post.frontmatter.description}
         </p>
+        <hr/>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr/>
       </article>
 
       <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        <Link to={`/`}>← Back to homepage</Link>
       </nav>
-    </Layout>
+    </Project>
   )
 }
 

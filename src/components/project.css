@@ -1,0 +1,22 @@
+.project-outer, body, html {
+  width: 100vw;
+  align-content: center;
+  background-color: #6E76B3;
+}
+
+.project {
+  /* Content */
+  max-width: 54rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+.project p, li, a  {
+  text-transform: none;
+  font-size: 1.0rem;
+  line-height: 1.4rem;
+}
+
+.project h1 {
+  text-transform: none;
+}
