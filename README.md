@@ -1,10 +1,10 @@
 # dotj.github.io
 
-Personal webpage
+Personal webpage. This used to have a few portfolio projects, hence the Gatsby blog setup.
 
 ## Usage
 
-To compile and test the site locally:
+To compile and test the site locally (last used Node v12.6.0 and npm 6.9.0)
 
 ```sh
 npm install

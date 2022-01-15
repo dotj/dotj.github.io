@@ -76,7 +76,7 @@ module.exports = {
         background_color: '#6E76B3',
         theme_color: '#9EB6C6',
         display: 'minimal-ui',
-        icon: 'src/images/moon.png',
+        icon: 'src/images/moon-emoji.png',
       },
     },
     'gatsby-plugin-offline',
